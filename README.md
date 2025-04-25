@@ -1,2 +1,49 @@
-# Gas-leakage-detection-system
-Developed a reliable Gas Leakage Detection System aimed at ensuring safety by promptly  detecting hazardous gas leaks. The system uses advanced sensors to monitor gas levels and triggers  alarms to alert occupants in case of a leak, preventing potential accidents and ensuring a safe  environment base.
+int gassensor-Al;
+
+int buzzer-13;
+
+I
+
+int led=12;|
+
+void setup()
+
+{
+
+pinMode (A1, INPUT);
+
+pinMode (buzzer, OUTPUT);
+
+pinMode (led, OUTPUT);
+
+Serial.begin(9600);
+
+}
+
+void loop()
+
+{
+
+int sensorValue=analogRead(gasSensor);
+
+Serial.print("GAS LEVEL:");
+
+Serial.println(sensorValue);
+
+delay(1000);
+
+if (sensorValue>250)
+
+Serial Monitor
+{
+
+digitalWrite(buzzer, HIGH);
+
+digitalWrite(led, HIGH);
+{
+else
+}
+digitalWrite(buzzer, LOW);
+
+digitalWrite(led, LOW);
+}
